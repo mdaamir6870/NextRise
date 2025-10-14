@@ -2,116 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NextRise Systems | Drone Inspection & AI Safety</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meluha Ethnic | Women & Girls Ethnic Wear - Gurugram</title>
+  <meta name="description" content="Meluha Ethnic - Premium women and girls ethnic wear in Gurugram. Sarees, lehengas, kurtas, suits, and accessories.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">NextRise<span>Systems</span></div>
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">Meluha Ethnic</a>
+      <nav class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="cartBtn" class="cart-btn" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <h1>Precision Drone Inspection Meets AI‑Powered Safety</h1>
-    <p>Visual, Thermal, and Smart Surveillance for Industrial Assets</p>
-    <div class="cta-buttons">
-      <a href="#contact" class="btn primary">Request a Demo</a>
-      <a href="#services" class="btn secondary">Explore Services</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Meluha Ethnic — Grace in Every Thread</h1>
+          <p>Curated women & girls ethnic wear crafted for celebrations and everyday elegance. Based in Gurugram.</p>
+          <a href="#products" class="btn primary">Shop Now</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+        </div>
+      </div>
+    </section>
 
-  <section id="services" class="services container">
-    <h2>Our Services</h2>
-    <div class="phase-cards">
-      <!-- Phase Cards -->
-      <div class="card">
-        <h3>Phase 1: Visual Drone Inspection</h3>
-        <ul>
-          <li>High-res tank survey</li>
-          <li>Construction progress tracking</li>
-          <li>Flare stack photography</li>
-          <li>Mapping & orthomosaic</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Phase 2: Thermal + Zoom Inspection</h3>
-        <ul>
-          <li>Infrared leak detection</li>
-          <li>Flare temperature check</li>
-          <li>Electrical/overheating analysis</li>
-          <li>AMC pipeline patrols</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Phase 3: AI Drone Safety Compliance</h3>
-        <ul>
-          <li>AI-powered drone camera analytics</li>
-          <li>Detect PPE: helmets, jackets, harness</li>
-          <li>Real-time non-compliance alerts</li>
-          <li>YOLO/Skylark AI model</li>
-          <li>Annotated videos & compliance report</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Products</h2>
+          <div class="filters">
+            <select id="filterCategory" aria-label="Filter by category">
+              <option value="all">All</option>
+              <option value="sarees">Sarees</option>
+              <option value="lehengas">Lehengas</option>
+              <option value="kurtas">Kurtas & Suits</option>
+              <option value="girls">Girls Collection</option>
+              <option value="accessories">Accessories</option>
+            </select>
+            <select id="sortBy" aria-label="Sort products">
+              <option value="popular">Most Popular</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
 
-  <section id="industries" class="industries container">
-    <h2>Industries Served</h2>
-    <div class="industry-grid">
-      <div class="industry">Oil & Gas Refineries</div>
-      <div class="industry">Pipelines</div>
-      <div class="industry">Power & Energy</div>
-      <div class="industry">Infrastructure & Construction</div>
-      <div class="industry">Industrial Shutdowns</div>
-    </div>
-  </section>
+        <div id="productGrid" class="grid"></div>
+      </div>
+    </section>
 
-  <section id="why" class="why container">
-    <h2>Why Choose Us</h2>
-    <div class="features-grid">
-      <div class="feature">
-        <h3>DGCA Certified Operators</h3>
+    <section id="categories" class="section alt">
+      <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+          <a href="#products" data-category="sarees" class="category-card"><span>Sarees</span></a>
+          <a href="#products" data-category="lehengas" class="category-card"><span>Lehengas</span></a>
+          <a href="#products" data-category="kurtas" class="category-card"><span>Kurtas & Suits</span></a>
+          <a href="#products" data-category="girls" class="category-card"><span>Girls Collection</span></a>
+          <a href="#products" data-category="accessories" class="category-card"><span>Accessories</span></a>
+        </div>
       </div>
-      <div class="feature">
-        <h3>PSU‑Ready SOPs</h3>
-      </div>
-      <div class="feature">
-        <h3>AI Video Analytics</h3>
-      </div>
-      <div class="feature">
-        <h3>All‑in‑one Platform</h3>
-      </div>
-      <div class="feature">
-        <h3>High‑Quality Reporting</h3>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="contact">
-    <h2>Contact Us</h2>
-    <form id="inquiry-form">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit" class="btn primary">Submit</button>
-    </form>
-    <div class="contact-links">
-      <a href="https://wa.me/WhatsAppNumber" target="_blank">WhatsApp / Call</a>
-      <a href="mailto:info@nextrisesystems.com">info@nextrisesystems.com</a>
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About Meluha Ethnic</h2>
+          <p>Meluha Ethnic brings contemporary finesse to traditional Indian wear for women and girls. From lightweight daily kurtas to occasion-ready lehengas and sarees, we blend comfort, craftsmanship, and value.</p>
+          <p>Based in Gurugram, we curate fabrics from trusted mills and artisan clusters to deliver lasting quality.</p>
+          <ul class="ticks">
+            <li>Handpicked fabrics & fine detailing</li>
+            <li>Inclusive sizes and custom fitting (demo)</li>
+            <li>Easy exchanges and support (demo)</li>
+          </ul>
+        </div>
+        <div class="about-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="two-col">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div>
+            <h3>Store Info (Gurugram)</h3>
+            <p><strong>Meluha Ethnic</strong><br/>Sector 29, Gurugram, Haryana (Demo)</p>
+            <p><strong>Hours:</strong> Mon–Sun, 11:00 AM – 8:00 PM (Demo)</p>
+            <p><strong>Phone:</strong> +91-98XXXXXX00 (Demo)</p>
+            <p><strong>Email:</strong> hello@meluhaethnic.in (Demo)</p>
+            <div class="map-embed">
+              <iframe title="Gurugram Map" src="https://maps.google.com/maps?q=Gurugram&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Meluha Ethnic. All rights reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
     </div>
-    <p class="footer-note">© 2025 NextRise Systems</p>
   </footer>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true" aria-labelledby="cartTitle">
+    <div class="cart-header">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button id="cartClose" class="icon-btn" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="totals">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <button class="btn primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <script src="script.js"></script>
 </body>
 </html>

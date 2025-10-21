@@ -1,160 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meluha Ethnic | Women & Girls Ethnic Wear - Gurugram</title>
-  <meta name="description" content="Meluha Ethnic - Premium women and girls ethnic wear in Gurugram. Sarees, lehengas, kurtas, suits, and accessories.">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>MELUHA ETHNIC | Women’s Ethnic Wear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MELUHA ETHNIC — Premium women's ethnic wear. Visit us at MGF Mall. Sarees, suits, lehengas & more.">
+  <meta property="og:title" content="MELUHA ETHNIC | Women’s Ethnic Wear">
+  <meta property="og:description" content="Premium ethnic wear store at MGF Mall. Sarees, suits, lehengas & more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1610030469980-3b0e1a0a2a7a?q=80&w=1200&auto=format&fit=crop">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f457.svg">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="#" class="logo">Meluha Ethnic</a>
-      <nav class="nav-links">
-        <a href="#products">Products</a>
-        <a href="#categories">Categories</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">MELUHA <span>ETHNIC</span></a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="tel:+919999999999">Call Now</a>
       </nav>
-      <button id="cartBtn" class="cart-btn" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
-      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <h1>Meluha Ethnic — Grace in Every Thread</h1>
-          <p>Curated women & girls ethnic wear crafted for celebrations and everyday elegance. Based in Gurugram.</p>
-          <a href="#products" class="btn primary">Shop Now</a>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="blob"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="products" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Featured Products</h2>
-          <div class="filters">
-            <select id="filterCategory" aria-label="Filter by category">
-              <option value="all">All</option>
-              <option value="sarees">Sarees</option>
-              <option value="lehengas">Lehengas</option>
-              <option value="kurtas">Kurtas & Suits</option>
-              <option value="girls">Girls Collection</option>
-              <option value="accessories">Accessories</option>
-            </select>
-            <select id="sortBy" aria-label="Sort products">
-              <option value="popular">Most Popular</option>
-              <option value="price-asc">Price: Low to High</option>
-              <option value="price-desc">Price: High to Low</option>
-            </select>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Timeless Women’s Ethnic Wear</h1>
+          <p>Discover curated sarees, suits, and lehengas crafted with exquisite detail. Visit us at MGF Mall.</p>
+          <div class="btn-group">
+            <a class="btn primary" href="collection.html">Shop Collection</a>
+            <a class="btn ghost" href="contact.html">Visit Store</a>
           </div>
-        </div>
-        <div id="productGrid" class="grid"></div>
-      </div>
-    </section>
-
-    <section id="categories" class="section alt">
-      <div class="container">
-        <h2>Shop by Category</h2>
-        <div class="category-grid">
-          <a href="#products" data-category="sarees" class="category-card"><span>Sarees</span></a>
-          <a href="#products" data-category="lehengas" class="category-card"><span>Lehengas</span></a>
-          <a href="#products" data-category="kurtas" class="category-card"><span>Kurtas & Suits</span></a>
-          <a href="#products" data-category="girls" class="category-card"><span>Girls</span></a>
-          <a href="#products" data-category="accessories" class="category-card"><span>Accessories</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <h2>About Meluha Ethnic</h2>
-          <p>Meluha Ethnic brings contemporary finesse to traditional Indian wear for women and girls. From lightweight daily kurtas to occasion-ready lehengas and sarees, we blend comfort, craftsmanship, and value.</p>
-          <p>Based in Gurugram, we curate fabrics from trusted mills and artisan clusters to deliver lasting quality.</p>
-          <ul class="ticks">
-            <li>Handpicked fabrics & fine detailing</li>
-            <li>Inclusive sizes and custom fitting (demo)</li>
-            <li>Easy exchanges and support (demo)</li>
+          <ul class="trust">
+            <li>Premium Fabrics</li>
+            <li>Tailoring Support</li>
+            <li>Exclusive Designs</li>
           </ul>
         </div>
-        <div class="about-art" aria-hidden="true"></div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f?q=80&w=1200&auto=format&fit=crop" alt="Woman wearing ethnic saree">
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section class="highlights">
       <div class="container">
-        <h2>Contact</h2>
-        <div class="two-col">
-          <form id="contactForm" class="contact-form">
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn primary">Send Message</button>
-            <p id="formStatus" role="status" aria-live="polite"></p>
-          </form>
-
-          <div>
-            <h3>Store Info (Gurugram)</h3>
-            <p><strong>Meluha Ethnic</strong><br/>Sector 29, Gurugram, Haryana (Demo)</p>
-            <p><strong>Hours:</strong> Mon–Sun, 11:00 AM – 8:00 PM (Demo)</p>
-            <p><strong>Phone:</strong> +91-98XXXXXX00 (Demo)</p>
-            <p><strong>Email:</strong> hello@meluhaethnic.in (Demo)</p>
-            <div class="map-embed">
-              <iframe title="Gurugram Map" src="https://maps.google.com/maps?q=Gurugram&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
-            </div>
-          </div>
+        <h2>Featured Categories</h2>
+        <div class="cards">
+          <a class="card" href="collection.html#sarees">
+            <img src="https://images.unsplash.com/photo-1621784562861-9b3b6ed14a93?q=80&w=800&auto=format&fit=crop" alt="Sarees">
+            <h3>Sarees</h3>
+            <p>Silk, Organza, Kanjivaram, Banarasi</p>
+          </a>
+          <a class="card" href="collection.html#suits">
+            <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0e?q=80&w=800&auto=format&fit=crop" alt="Suits">
+            <h3>Salwar Suits</h3>
+            <p>Unstitched & Ready-to-wear</p>
+          </a>
+          <a class="card" href="collection.html#lehengas">
+            <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?q=80&w=800&auto=format&fit=crop" alt="Lehengas">
+            <h3>Lehengas</h3>
+            <p>Bridal & Festive</p>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container banner-wrap">
+        <div>
+          <h2>Store Location — MGF Mall</h2>
+          <p>Ground Floor, MGF Mall. Open all 7 days, 11 AM – 9 PM</p>
+          <a class="btn primary" href="contact.html#map">Get Directions</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1595769816263-9b910be24d5f?q=80&w=1200&auto=format&fit=crop" alt="Store interior" />
+      </div>
+    </section>
+
+    <section class="grid-products">
+      <div class="container">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+          <a class="product-card" href="product.html?id=SE101">
+            <img src="https://images.unsplash.com/photo-1520975922284-87a6a10236dd?q=80&w=800&auto=format&fit=crop" alt="Banarasi Saree">
+            <h3>Banarasi Silk Saree</h3>
+            <p class="price">₹7,990</p>
+          </a>
+          <a class="product-card" href="product.html?id=LE204">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4e8152ef64?q=80&w=800&auto=format&fit=crop" alt="Bridal Lehenga">
+            <h3>Bridal Lehenga Set</h3>
+            <p class="price">₹24,990</p>
+          </a>
+          <a class="product-card" href="product.html?id=SU311">
+            <img src="https://images.unsplash.com/photo-1591348279720-d4a6f3d7c0e1?q=80&w=800&auto=format&fit=crop" alt="Anarkali Suit">
+            <h3>Anarkali Suit</h3>
+            <p class="price">₹6,490</p>
+          </a>
+          <a class="product-card" href="product.html?id=DU114">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop" alt="Dupatta">
+            <h3>Handwoven Dupatta</h3>
+            <p class="price">₹1,990</p>
+          </a>
+        </div>
+        <div class="center">
+          <a class="btn ghost" href="collection.html">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box">
+        <h2>Need Styling Help?</h2>
+        <p>Book a free styling session at our MGF Mall store.</p>
+        <a class="btn primary" href="contact.html#appointment">Book Appointment</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Meluha Ethnic. All rights reserved.</p>
-      <div class="social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="Facebook">Facebook</a>
-        <a href="#" aria-label="Pinterest">Pinterest</a>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">MELUHA <span>ETHNIC</span></div>
+        <p>Premium women’s ethnic wear at MGF Mall.</p>
       </div>
+      <div>
+        <h4>Store</h4>
+        <ul>
+          <li>MGF Mall, Ground Floor</li>
+          <li>Open: 11 AM – 9 PM</li>
+          <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      © <span id="year"></span> MELUHA ETHNIC. All rights reserved.
     </div>
   </footer>
 
-  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true" aria-labelledby="cartTitle">
-    <div class="cart-header">
-      <h3 id="cartTitle">Your Cart</h3>
-      <button id="cartClose" class="icon-btn" aria-label="Close cart">✕</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Collection | MELUHA ETHNIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore ethnic collection: sarees, suits, lehengas, dupattas at MELUHA ETHNIC.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">MELUHA <span>ETHNIC</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html" class="active">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Our Collection</h1>
+  <p>Curated women’s ethnic wear for every occasion.</p>
+
+  <h2 id="sarees">Sarees</h2>
+  <div class="product-grid">
+    <a class="product-card" href="product.html?id=SE101">
+      <img src="https://images.unsplash.com/photo-1520975922284-87a6a10236dd?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Banarasi Silk Saree</h3>
+      <p class="price">₹7,990</p>
+    </a>
+    <a class="product-card" href="product.html?id=SE102">
+      <img src="https://images.unsplash.com/photo-1601134467661-3d775b3d0f47?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Organza Pastel Saree</h3>
+      <p class="price">₹5,490</p>
+    </a>
+  </div>
+
+  <h2 id="suits">Salwar Suits</h2>
+  <div class="product-grid">
+    <a class="product-card" href="product.html?id=SU311">
+      <img src="https://images.unsplash.com/photo-1591348279720-d4a6f3d7c0e1?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Anarkali Suit</h3>
+      <p class="price">₹6,490</p>
+    </a>
+    <a class="product-card" href="product.html?id=SU312">
+      <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0e?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Printed Kurta Set</h3>
+      <p class="price">₹2,990</p>
+    </a>
+  </div>
+
+  <h2 id="lehengas">Lehengas</h2>
+  <div class="product-grid">
+    <a class="product-card" href="product.html?id=LE204">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4e8152ef64?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Bridal Lehenga Set</h3>
+      <p class="price">₹24,990</p>
+    </a>
+    <a class="product-card" href="product.html?id=LE205">
+      <img src="https://images.unsplash.com/photo-1596461404969-9ae70b33b3fb?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Festive Lehenga</h3>
+      <p class="price">₹12,990</p>
+    </a>
+  </div>
+
+  <h2 id="dupattas">Dupattas</h2>
+  <div class="product-grid">
+    <a class="product-card" href="product.html?id=DU114">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Handwoven Dupatta</h3>
+      <p class="price">₹1,990</p>
+    </a>
+    <a class="product-card" href="product.html?id=DU115">
+      <img src="https://images.unsplash.com/photo-1603321572921-3b781b0dc0e7?q=80&w=800&auto=format&fit=crop" alt="">
+      <h3>Embroidered Dupatta</h3>
+      <p class="price">₹2,490</p>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">MELUHA <span>ETHNIC</span></div>
+      <p>Premium women’s ethnic wear at MGF Mall.</p>
     </div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-footer">
-      <div class="totals">
-        <span>Subtotal</span>
-        <strong id="cartSubtotal">₹0</strong>
+    <div>
+      <h4>Store</h4>
+      <ul>
+        <li>MGF Mall, Ground Floor</li>
+        <li>Open: 11 AM – 9 PM</li>
+        <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">© <span id="year"></span> MELUHA ETHNIC.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product | MELUHA ETHNIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Product detail - MELUHA ETHNIC">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">MELUHA <span>ETHNIC</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<main class="container product-page">
+  <div id="product"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">MELUHA <span>ETHNIC</span></div>
+      <p>Premium women’s ethnic wear at MGF Mall.</p>
+    </div>
+    <div>
+      <h4>Store</h4>
+      <ul>
+        <li>MGF Mall, Ground Floor</li>
+        <li>Open: 11 AM – 9 PM</li>
+        <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">© <span id="year"></span> MELUHA ETHNIC.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+const PRODUCTS = {
+  "SE101": {
+    title: "Banarasi Silk Saree",
+    price: 7990,
+    images: [
+      "https://images.unsplash.com/photo-1520975922284-87a6a10236dd?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1520975964855-8e3cfaaae2ca?q=80&w=1200&auto=format&fit=crop"
+    ],
+    desc: "Classic Banarasi silk saree with zari work. Includes blouse piece.",
+    specs: ["Fabric: Silk", "Length: 5.5m", "Blouse: 0.8m", "Care: Dry Clean"]
+  },
+  "LE204": {
+    title: "Bridal Lehenga Set",
+    price: 24990,
+    images: [
+      "https://images.unsplash.com/photo-1605559424843-9e4e8152ef64?q=80&w=1200&auto=format&fit=crop"
+    ],
+    desc: "Embroidered bridal lehenga with dupatta and blouse.",
+    specs: ["Fabric: Net/Silk", "Work: Zari/Sequin", "Care: Dry Clean"]
+  },
+  "SU311": {
+    title: "Anarkali Suit",
+    price: 6490,
+    images: [
+      "https://images.unsplash.com/photo-1591348279720-d4a6f3d7c0e1?q=80&w=1200&auto=format&fit=crop"
+    ],
+    desc: "Floor-length Anarkali suit set with dupatta.",
+    specs: ["Fabric: Georgette", "Sleeve: Full", "Care: Gentle Wash"]
+  },
+  "DU114": {
+    title: "Handwoven Dupatta",
+    price: 1990,
+    images: [
+      "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop"
+    ],
+    desc: "Handloom dupatta with intricate weave.",
+    specs: ["Fabric: Cotton/Silk", "Length: 2.25m", "Care: Hand Wash"]
+  }
+};
+
+function formatINR(n){ return "₹" + n.toLocaleString("en-IN"); }
+
+function renderProduct() {
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  const data = PRODUCTS[id] || null;
+
+  const el = document.getElementById("product");
+  if (!data) {
+    el.innerHTML = `<p>Product not found. <a href="collection.html">Back to Collection</a></p>`;
+    return;
+  }
+
+  const imgs = data.images.map(src => `<img src="${src}" alt="${data.title}">`).join("");
+  const specs = data.specs.map(s => `<li>${s}</li>`).join("");
+
+  el.innerHTML = `
+    <div class="prod-wrap">
+      <div class="prod-images">${imgs}</div>
+      <div class="prod-info">
+        <h1>${data.title}</h1>
+        <p class="price">${formatINR(data.price)}</p>
+        <p>${data.desc}</p>
+        <ul class="specs">${specs}</ul>
+        <div class="btn-group">
+          <a class="btn primary" href="tel:+919999999999">Call to Order</a>
+          <a class="btn ghost" href="contact.html#map">Visit Store</a>
+        </div>
       </div>
-      <button class="btn primary" id="checkoutBtn">Checkout</button>
     </div>
-  </aside>
+  `;
+}
+renderProduct();
+</script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About | MELUHA ETHNIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About MELUHA ETHNIC — Women’s ethnic wear store in MGF Mall.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">MELUHA <span>ETHNIC</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
 
-  <div id="overlay" class="overlay" hidden></div>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>MELUHA ETHNIC brings together craftsmanship and contemporary style.</p>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="container split">
+    <div>
+      <h2>Our Story</h2>
+      <p>Founded with a passion for timeless ethnic wear, MELUHA ETHNIC curates premium sarees, suits, and lehengas from skilled artisans across India.</p>
+      <p>We focus on quality fabrics, perfect fits, and personal styling assistance for every customer.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1543165796-5426273eaab0?q=80&w=1200&auto=format&fit=crop" alt="Craftsmanship">
+  </section>
+
+  <section class="container values">
+    <h2>What We Value</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Quality</h3>
+        <p>Premium fabrics and enduring craftsmanship.</p>
+      </div>
+      <div class="card">
+        <h3>Design</h3>
+        <p>Elegant, contemporary silhouettes for every occasion.</p>
+      </div>
+      <div class="card">
+        <h3>Service</h3>
+        <p>Friendly guidance, alterations, and after-care tips.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">MELUHA <span>ETHNIC</span></div>
+      <p>Premium women’s ethnic wear at MGF Mall.</p>
+    </div>
+    <div>
+      <h4>Store</h4>
+      <ul>
+        <li>MGF Mall, Ground Floor</li>
+        <li>Open: 11 AM – 9 PM</li>
+        <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">© <span id="year"></span> MELUHA ETHNIC.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | MELUHA ETHNIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact MELUHA ETHNIC at MGF Mall — phone, directions, appointment.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">MELUHA <span>ETHNIC</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<main>
+  <section class="container">
+    <h1>Contact Us</h1>
+    <div class="split">
+      <div>
+        <h2>Store Details</h2>
+        <p><strong>Address:</strong> MGF Mall, Ground Floor</p>
+        <p><strong>Hours:</strong> 11 AM – 9 PM (All days)</p>
+        <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 99999 99999</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hello@meluhaethnic.com">hello@meluhaethnic.com</a></p>
+
+        <h3 id="appointment">Book Appointment</h3>
+        <form id="appt-form">
+          <label>Name<input required name="name" type="text" placeholder="Your name"></label>
+          <label>Phone<input required name="phone" type="tel" placeholder="+91"></label>
+          <label>Preferred Date<input required name="date" type="date"></label>
+          <label>Message<textarea name="msg" placeholder="Tell us what you’re looking for"></textarea></label>
+          <button class="btn primary" type="submit">Submit</button>
+          <p id="form-status" class="muted"></p>
+        </form>
+      </div>
+      <div id="map">
+        <h2>Find Us</h2>
+        <iframe title="Map" width="100%" height="320" style="border:0"
+          loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=MGF%20Mall&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">MELUHA <span>ETHNIC</span></div>
+      <p>Premium women’s ethnic wear at MGF Mall.</p>
+    </div>
+    <div>
+      <h4>Store</h4>
+      <ul>
+        <li>MGF Mall, Ground Floor</li>
+        <li>Open: 11 AM – 9 PM</li>
+        <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">© <span id="year"></span> MELUHA ETHNIC.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+document.getElementById("appt-form").addEventListener("submit", function(e){
+  e.preventDefault();
+  const status = document.getElementById("form-status");
+  status.textContent = "Submitting...";
+  setTimeout(() => {
+    status.textContent = "Thank you! We will contact you shortly.";
+    this.reset();
+  }, 700);
+});
+</script>
 </body>
 </html>
